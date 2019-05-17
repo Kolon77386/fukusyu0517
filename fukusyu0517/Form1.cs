@@ -26,26 +26,37 @@ namespace fukusyu0517
         {
             label1.Left+=int.Parse(textBox1.Text);
             label1.Top+=int.Parse(textBox2.Text);
+            //EnabkeをTrueにすること
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            label1.Top -= 5;
+            textBox1.Text = "0";
+            textBox2.Text = "-5";
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            label1.Left -= 5;
+            textBox1.Text = "-5";
+            textBox2.Text = "0";
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            label1.Left += 5;
+            textBox1.Text = "5";
+            textBox2.Text = "0";
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            label1.Top += 5;
+            textBox1.Text = "0";
+            textBox2.Text = "5";
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "0";
+            textBox2.Text = "0";
         }
     }
 }
